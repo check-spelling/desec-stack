@@ -70,7 +70,7 @@
                   />
                 </template>
                 <v-dialog
-                        v-if="createable"
+                        v-if="creatable"
                         v-model="createDialog"
                         activator="#create"
                         max-width="500px"
@@ -398,7 +398,7 @@ export default {
     dirtyError: new Set(),
     /* to be overwritten */
     // features
-    createable: true,
+    creatable: true,
     updatable: false,
     destroyable: true,
     // optics
