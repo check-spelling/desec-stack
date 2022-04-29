@@ -957,7 +957,7 @@ class AuthenticatedUserAction(AuthenticatedBasicUserAction):
     @property
     def _state_fields(self):
         # TODO consider adding a "last change" attribute of the user to the state to avoid code
-        #  re-use after the the state has been changed and changed back.
+        #  re-use after the state has been changed and changed back.
         return super()._state_fields + [self.user.email, self.user.password, self.user.is_active]
 
 
